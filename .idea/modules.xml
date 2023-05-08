@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discovery/discovery.iml" filepath="$PROJECT_DIR$/discovery/discovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-personalisation/ms-personalisation.iml" filepath="$PROJECT_DIR$/ms-personalisation/ms-personalisation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-recipe-manage/ms-recipe-manage.iml" filepath="$PROJECT_DIR$/ms-recipe-manage/ms-recipe-manage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/peasy_ktchen.iml" filepath="$PROJECT_DIR$/peasy_ktchen.iml" />
+    </modules>
+  </component>
+</project>

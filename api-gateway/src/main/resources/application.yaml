@@ -1,0 +1,30 @@
+server:
+  port: 7777
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8888/eureka
+
+
+spring:
+  application:
+    name: proxy
+  cloud:
+    gateway:
+      routes:
+        - id: routetorecipe
+          predicates:
+            - Path=/peasy/**
+          filters:
+            - RewritePath=/peasy/(?<s>.*), /${s}
+
+          uri: lb://ms-recipe-manage
+        - id: routetoperson
+          predicates:
+            - Path=/peasy/**
+          filters:
+            - AuthentificationFilter
+          uri: lb://ms-personalisation
